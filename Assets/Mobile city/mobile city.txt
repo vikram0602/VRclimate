@@ -1,0 +1,15 @@
+This package’s intention is to provide the base for building a city for mobile. Low poly, batching, LODs ( Level Of Detail ) and low texture use were the main concept for the making.
+
+
+_____________________________________
+How to use:
+
+Check the included Mobile_City_reference_guide.pdf file or http://tinyurl.com/mobilecity for a more updated guide.
+
+
+_____________________________________
+Version history:
+
+1.0 Initial release
+1.1 Added beach porps
+

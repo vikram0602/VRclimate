@@ -1,0 +1,112 @@
+fileFormatVersion: 2
+guid: 25e1ce991164afd4095c7a391b2abc50
+timeCreated: 1460514302
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000
+  assetHash:
+    serializedVersion: 2
+    Hash: d05cc4b5e34072cf46012061b2826ed8
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.13448031, y: 0.76122487, z: -0.16871913}
+      lookAt: {x: -0.024388943, y: 0.3580898, z: 0.16683534}
+      up: {x: -0.31476903, y: 0.67743075, z: 0.66483694}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 68mm Pipe
+    100002: 68mm Pipe#1
+    100004: 68mm Plastic Pipe Swan neck
+    100006: 68mm Plastic RWP
+    100008: Collar
+    100010: //RootNode
+    400000: 68mm Pipe
+    400002: 68mm Pipe#1
+    400004: 68mm Plastic Pipe Swan neck
+    400006: 68mm Plastic RWP
+    400008: Collar
+    400010: //RootNode
+    2300000: 68mm Pipe
+    2300002: 68mm Pipe#1
+    2300004: Collar
+    3300000: 68mm Pipe
+    3300002: 68mm Pipe#1
+    3300004: Collar
+    4300000: Mesh 68mm Pipe#1
+    4300002: Mesh 68mm Pipe
+    4300004: Mesh Collar
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

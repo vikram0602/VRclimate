@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 0afbd6cad5b340043922b47cc2bd33c2
+timeCreated: 1460591053
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f0000006000000061000000620000006300000064000000
+  assetHash:
+    serializedVersion: 2
+    Hash: d73f66e4c9c1142b09e9c3fb2d1cc061
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -1.7305002, y: 1.0572687, z: -5.762893}
+      lookAt: {x: -0.3812052, y: 1.6559876, z: 0.13673826}
+      up: {x: -0.021949397, y: 0.9951421, z: -0.095971115}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Group 1
+    100004: Group 11
+    100006: Group 12
+    100008: Group 16
+    100010: Group 18
+    100012: Group 19
+    100014: Group 2
+    100016: Group 21
+    100018: Group 22
+    100020: Group 24
+    100022: Group 25
+    100024: Group 29
+    100026: Group 31
+    100028: Group 32
+    100030: Group 34
+    100032: Group 35
+    100034: Group 39
+    100036: Group 41
+    100038: Group 42
+    100040: Group 44
+    100042: Group 45
+    100044: Group 47
+    100046: Group 49
+    100048: Group 50
+    100050: Group 54
+    100052: Group 56
+    100054: Group 57
+    100056: Group 59
+    100058: Group 6
+    100060: Group 60
+    100062: Group 64
+    100064: Group 66
+    100066: Group 67
+    100068: Group 69
+    100070: Group 70
+    100072: Group 72
+    100074: Group 74
+    100076: Group 75
+    100078: Group 79
+    100080: Group 8
+    100082: Group 81
+    100084: Group 82
+    100086: Group 84
+    100088: Group 85
+    100090: Group 89
+    100092: Group 9
+    100094: Group 91
+    100096: Group 92
+    100098: Group 94
+    100100: Group 95
+    100102: Group 97
+    100104: stop sign
+    100106: Untitled (3)
+    100108: Untitled (3) 1
+    100110: Untitled (3) 2
+    100112: Untitled (3) 3
+    100114: Untitled (3) 4
+    100116: Untitled (3) 5
+    100118: Untitled (3) 6
+    100120: Untitled (3) 7
+    100122: wingnut
+    100124: wingnut 1
+    100126: wingnut 2
+    100128: wingnut 3
+    100130: wingnut 4
+    100132: wingnut 5
+    100134: wingnut 6
+    100136: wingnut 7
+    400000: //RootNode
+    400002: Group 1
+    400004: Group 11
+    400006: Group 12
+    400008: Group 16
+    400010: Group 18
+    400012: Group 19
+    400014: Group 2
+    400016: Group 21
+    400018: Group 22
+    400020: Group 24
+    400022: Group 25
+    400024: Group 29
+    400026: Group 31
+    400028: Group 32
+    400030: Group 34
+    400032: Group 35
+    400034: Group 39
+    400036: Group 41
+    400038: Group 42
+    400040: Group 44
+    400042: Group 45
+    400044: Group 47
+    400046: Group 49
+    400048: Group 50
+    400050: Group 54
+    400052: Group 56
+    400054: Group 57
+    400056: Group 59
+    400058: Group 6
+    400060: Group 60
+    400062: Group 64
+    400064: Group 66
+    400066: Group 67
+    400068: Group 69
+    400070: Group 70
+    400072: Group 72
+    400074: Group 74
+    400076: Group 75
+    400078: Group 79
+    400080: Group 8
+    400082: Group 81
+    400084: Group 82
+    400086: Group 84
+    400088: Group 85
+    400090: Group 89
+    400092: Group 9
+    400094: Group 91
+    400096: Group 92
+    400098: Group 94
+    400100: Group 95
+    400102: Group 97
+    400104: stop sign
+    400106: Untitled (3)
+    400108: Untitled (3) 1
+    400110: Untitled (3) 2
+    400112: Untitled (3) 3
+    400114: Untitled (3) 4
+    400116: Untitled (3) 5
+    400118: Untitled (3) 6
+    400120: Untitled (3) 7
+    400122: wingnut
+    400124: wingnut 1
+    400126: wingnut 2
+    400128: wingnut 3
+    400130: wingnut 4
+    400132: wingnut 5
+    400134: wingnut 6
+    400136: wingnut 7
+    2300000: Group 12
+    2300002: Group 16
+    2300004: Group 19
+    2300006: Group 2
+    2300008: Group 22
+    2300010: Group 25
+    2300012: Group 29
+    2300014: Group 32
+    2300016: Group 35
+    2300018: Group 39
+    2300020: Group 42
+    2300022: Group 45
+    2300024: Group 47
+    2300026: Group 50
+    2300028: Group 54
+    2300030: Group 57
+    2300032: Group 6
+    2300034: Group 60
+    2300036: Group 64
+    2300038: Group 67
+    2300040: Group 70
+    2300042: Group 72
+    2300044: Group 75
+    2300046: Group 79
+    2300048: Group 82
+    2300050: Group 85
+    2300052: Group 89
+    2300054: Group 9
+    2300056: Group 92
+    2300058: Group 95
+    2300060: Group 97
+    2300062: stop sign
+    3300000: Group 12
+    3300002: Group 16
+    3300004: Group 19
+    3300006: Group 2
+    3300008: Group 22
+    3300010: Group 25
+    3300012: Group 29
+    3300014: Group 32
+    3300016: Group 35
+    3300018: Group 39
+    3300020: Group 42
+    3300022: Group 45
+    3300024: Group 47
+    3300026: Group 50
+    3300028: Group 54
+    3300030: Group 57
+    3300032: Group 6
+    3300034: Group 60
+    3300036: Group 64
+    3300038: Group 67
+    3300040: Group 70
+    3300042: Group 72
+    3300044: Group 75
+    3300046: Group 79
+    3300048: Group 82
+    3300050: Group 85
+    3300052: Group 89
+    3300054: Group 9
+    3300056: Group 92
+    3300058: Group 95
+    3300060: Group 97
+    3300062: stop sign
+    4300000: Mesh Group 2
+    4300002: Mesh Group 6
+    4300004: Mesh Group 9
+    4300006: Mesh Group 47
+    4300008: Mesh Group 72
+    4300010: Mesh Group 97
+    4300012: Mesh stop sign
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
