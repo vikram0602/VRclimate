@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/scene 2.unity
+- path: Assets/Scene/Julscene.unity
   isLoaded: 1
   isActive: 1
