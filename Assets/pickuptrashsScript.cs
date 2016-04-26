@@ -154,36 +154,25 @@ public class pickuptrashsScript : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other){
-		timer = 0.0f;
-		timerstart = false;
-		
-		//Making the characters look at the player
-		/*Vector3 targetPosition1 = new Vector3(player.transform.position.x, gossiper1.transform.position.y, player.transform.position.z);
-		Vector3 targetPosition2 = new Vector3(player.transform.position.x, gossiper2.transform.position.y, player.transform.position.z);
-		gossiper1.transform.LookAt(targetPosition1);
-		gossiper2.transform.LookAt(targetPosition2);*/
-				
-		//Setting the speech when the characters interacts with the player
-		audio_voice.clip = audioclip_should_I_pick_this_up;
-		audio_voice.loop = false;
-        audio_voice.Play();
-		myself.enabled = false;
-		
-		pending_decision_to_pick_up = true;
-		
+	
+		if (other.gameObject.tag == "Player") {
+			timer = 0.0f;
+			timerstart = false;
+			
+			//Making the characters look at the player
+			/*Vector3 targetPosition1 = new Vector3(player.transform.position.x, gossiper1.transform.position.y, player.transform.position.z);
+			Vector3 targetPosition2 = new Vector3(player.transform.position.x, gossiper2.transform.position.y, player.transform.position.z);
+			gossiper1.transform.LookAt(targetPosition1);
+			gossiper2.transform.LookAt(targetPosition2);*/
+					
+			//Setting the speech when the characters interacts with the player
+			audio_voice.clip = audioclip_should_I_pick_this_up;
+			audio_voice.loop = false;
+			audio_voice.Play();
+			myself.enabled = false;
+			
+			pending_decision_to_pick_up = true;
+		}
         
     }
-	
-	/*void OnClick() {
-		//Fire2 is ps4's X
-		//Fire3 is ps4's O
-		if (pending_decision_to_pick_up) {
-			if(Input.GetButtonDown("Fire2")) {
-				decision = true;
-			}
-			if(Input.GetButtonDown("Fire3")) {
-				decision = false;
-			}
-		}
-	}*/
 }
