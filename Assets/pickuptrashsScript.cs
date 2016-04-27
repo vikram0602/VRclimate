@@ -15,6 +15,8 @@ public class pickuptrashsScript : MonoBehaviour {
 	
 	public Collider myself;
 	public MeshRenderer garbage;
+	//public GameObject Sci_flyer;
+	public GameObject player_flyer;
 	
 	//Player stuff
 	public GameObject player;
@@ -43,6 +45,7 @@ public class pickuptrashsScript : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		//player_flyer.SetActive (true);
 		timer =0.0f;
 		timer2 =0.0f;
 		timerstart = false;
@@ -78,6 +81,7 @@ public class pickuptrashsScript : MonoBehaviour {
 				audio_scientist_voice.loop = false;
 				garbage.enabled = false;
 				scientist_animator.runtimeAnimatorController = scientist_animatorcontroller_leftturn;
+				//Sci_flyer.SetActive (true);
 			}
 			else if(Input.GetButtonDown("Fire3")) {
 				decision = false;
@@ -125,7 +129,7 @@ public class pickuptrashsScript : MonoBehaviour {
 				audio_voice.clip = audioclip_accepted_flyer;
 				audio_voice.loop = false;
 				audio_voice.Play();
-				
+				player_flyer.SetActive (true);
 				timer2=0.0f;
 				initiate_sequence = 4;
 			}
@@ -149,6 +153,7 @@ public class pickuptrashsScript : MonoBehaviour {
 			audio_scientist_voice.Play();
 			scientist_animator.runtimeAnimatorController = scientist_animatorcontroller_pointing;
 			initiate_sequence = 5;
+			player_flyer.SetActive (false);
 		}
 		
 	}
