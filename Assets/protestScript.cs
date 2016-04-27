@@ -36,12 +36,15 @@ public class protestScript : MonoBehaviour {
 	
 	//Collider stuff
 	public Collider myself;
+	public GameObject colliders;
+	
+	//Public stuff (Flags for changing scenes)
+	public bool decision;
 	
 	//private stuff
 	private bool timerstart;
 	private float timer;
 	private int sequence_number;
-	private bool decision;
 	private bool done_talking;
 	
 	// Use this for initialization
@@ -180,6 +183,13 @@ public class protestScript : MonoBehaviour {
 		
 		else if (sequence_number==8 && ((decision && timer>=protestor_audioclip_4good.length) || (!decision && timer>=protestor_audioclip_4bad.length))) {
 			protestor_animator.runtimeAnimatorController = protestor_animatorcontroller_idle;
+			sequence_number = 9;
+			//Changing Scene stuff
+			GameObject changeSceneCube = GameObject.Find("ChangeSceneTrigger");
+			ChangeScenesScript changeSceneScript = changeSceneCube.GetComponent<ChangeScenesScript>();
+			changeSceneScript.protestorsdone = true;
+			changeSceneScript.protestors_decision = decision;
+			colliders.SetActive(false);
 		}
 	
 	}
@@ -196,6 +206,7 @@ public class protestScript : MonoBehaviour {
 			Vector3 targetPosition2 = new Vector3(player.transform.position.x, gossiper2.transform.position.y, player.transform.position.z);
 			gossiper1.transform.LookAt(targetPosition1);
 			gossiper2.transform.LookAt(targetPosition2);*/
+			colliders.SetActive(true);
 			
 		}
     }

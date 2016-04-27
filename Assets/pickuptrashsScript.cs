@@ -10,13 +10,15 @@ public class pickuptrashsScript : MonoBehaviour {
 	private bool flyer_decision;
 	private bool flyer_accepted;
 	private int initiate_sequence;
-	private float audio_length;
 	
+	//Public flags
+	public bool decision;
 	
+	//Garbage and collider
 	public Collider myself;
 	public MeshRenderer garbage;
-	//public GameObject Sci_flyer;
 	public GameObject player_flyer;
+	public GameObject colliders;
 	
 	//Player stuff
 	public GameObject player;
@@ -40,7 +42,7 @@ public class pickuptrashsScript : MonoBehaviour {
 	public RuntimeAnimatorController scientist_animatorcontroller_pointing;
 	public RuntimeAnimatorController scientist_animatorcontroller_idle;
 	
-	public bool decision;
+	
 	
 	
 	// Use this for initialization
@@ -54,8 +56,6 @@ public class pickuptrashsScript : MonoBehaviour {
 		initiate_sequence = -1;
 		flyer_decision = false;
 		flyer_accepted = false;
-		if (audioclip_scientist_1good.length>audioclip_scientist_1bad.length) audio_length = audioclip_scientist_1good.length;
-		else audio_length = audioclip_scientist_1bad.length;
 	}
 	
 	// Update is called once per frame
@@ -81,7 +81,6 @@ public class pickuptrashsScript : MonoBehaviour {
 				audio_scientist_voice.loop = false;
 				garbage.enabled = false;
 				scientist_animator.runtimeAnimatorController = scientist_animatorcontroller_leftturn;
-				//Sci_flyer.SetActive (true);
 			}
 			else if(Input.GetButtonDown("Fire3")) {
 				decision = false;
@@ -101,9 +100,8 @@ public class pickuptrashsScript : MonoBehaviour {
 			scientist_animator.runtimeAnimatorController = scientist_animatorcontroller_walking;	
 			initiate_sequence = 1;
 		}
-		//else if (initiate_sequence==1 && timer>=4.0f && ((decision && timer<audioclip_scientist_1good.length+4.0f)||(!decision && timer<audioclip_scientist_1bad.length+4.0f))) {
-		//else if (initiate_sequence==1 && timer>=4.0f && (timer< audio_length +4.0f)) {
-		else if (initiate_sequence==1 && timer>=4.2f/*((decision && timer<audioclip_scientist_1good.length+4.0f) || (!decision && timer<audioclip_scientist_1bad.length+4.0f))*/) {
+		
+		else if (initiate_sequence==1 && timer>=4.2f) {
 			
 			Vector3 targetPosition1 = new Vector3(player.transform.position.x, scientist.transform.position.y, player.transform.position.z);
 			scientist.transform.LookAt(targetPosition1);
@@ -111,8 +109,6 @@ public class pickuptrashsScript : MonoBehaviour {
 			audio_scientist_voice.Play();
 			initiate_sequence = 2;
 		}
-		//else if (initiate_sequence==2 && (decision && timer>=audioclip_scientist_1good.length+4.0f)||(!decision && timer>=audioclip_scientist_1bad.length+4.0f)) {
-		//else if (initiate_sequence==2 && (timer>= audio_length +4.0f)) {
 		else if (initiate_sequence==2 && ((decision && timer>=audioclip_scientist_1good.length+4.2f) || (!decision && timer>=audioclip_scientist_1bad.length+4.2f))) {
 			Vector3 targetPosition1 = new Vector3(player.transform.position.x, scientist.transform.position.y, player.transform.position.z);
 			scientist.transform.LookAt(targetPosition1);
@@ -154,6 +150,12 @@ public class pickuptrashsScript : MonoBehaviour {
 			scientist_animator.runtimeAnimatorController = scientist_animatorcontroller_pointing;
 			initiate_sequence = 5;
 			player_flyer.SetActive (false);
+			
+			GameObject changeSceneCube = GameObject.Find("ChangeSceneTrigger");
+			ChangeScenesScript changeSceneScript = changeSceneCube.GetComponent<ChangeScenesScript>();
+			changeSceneScript.pickuptrashdone = true;
+			changeSceneScript.pickuptrash_decision = decision;
+			colliders.SetActive(false);
 		}
 		
 	}
@@ -177,6 +179,8 @@ public class pickuptrashsScript : MonoBehaviour {
 			myself.enabled = false;
 			
 			pending_decision_to_pick_up = true;
+			
+			colliders.SetActive(true);
 		}
         
     }
