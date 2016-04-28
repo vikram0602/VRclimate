@@ -12,7 +12,11 @@ public class ChangeScenesScript : MonoBehaviour {
 	//Audio SOurce and clip from player
 	public AudioSource playervoice;
 	public AudioClip playerclip;
+	public AudioClip playerclip_trash;
+	public AudioClip playerclip_company;
+	public AudioClip playerclip_good;
 	public GameObject player;
+	public GameObject flies;
 	
 	//Objects that need to appear or disappear;
 	public GameObject scene_neutral_stuff;
@@ -26,6 +30,9 @@ public class ChangeScenesScript : MonoBehaviour {
 	//Camera fading effect stuff
 	public GameObject camera1;
 	public GameObject camera2;
+	
+	//Skybox stuff
+	public Material skybox2;
 	
 	//Some private stuff
 	private float timer;
@@ -94,6 +101,10 @@ public class ChangeScenesScript : MonoBehaviour {
 					scene_badfuture_stuff.SetActive(false);
 					trash_sea.SetActive(false);
 					company_sea.SetActive(false);
+					flies.SetActive(false);
+					
+					playervoice.loop = false;
+					playervoice.clip = playerclip_good;
 				}
 				else if (!pickuptrash_decision && protestors_decision) {
 					//Activate trash only bad future
@@ -104,6 +115,11 @@ public class ChangeScenesScript : MonoBehaviour {
 					scene_badfuture_stuff.SetActive(true);
 					trash_sea.SetActive(true);
 					company_sea.SetActive(false);
+					flies.SetActive(true);
+					RenderSettings.skybox = skybox2;
+					
+					playervoice.loop = false;
+					playervoice.clip = playerclip_trash;
 				}
 				else if (pickuptrash_decision && !protestors_decision) {
 					//Activate Company only bad future
@@ -114,6 +130,11 @@ public class ChangeScenesScript : MonoBehaviour {
 					scene_badfuture_stuff.SetActive(true);
 					trash_sea.SetActive(false);
 					company_sea.SetActive(true);
+					flies.SetActive(false);
+					RenderSettings.skybox = skybox2;
+					
+					playervoice.loop = false;
+					playervoice.clip = playerclip_company;
 				}
 				else if (!pickuptrash_decision && !protestors_decision) {
 					//Activate Fully bad future
@@ -124,6 +145,11 @@ public class ChangeScenesScript : MonoBehaviour {
 					scene_badfuture_stuff.SetActive(true);
 					trash_sea.SetActive(false);
 					company_sea.SetActive(true);
+					flies.SetActive(true);
+					RenderSettings.skybox = skybox2;
+					
+					playervoice.loop = false;
+					playervoice.clip = playerclip_company;
 				}
 			}
 			
@@ -133,6 +159,7 @@ public class ChangeScenesScript : MonoBehaviour {
 					camera1.SetActive(true);
 					camera2.SetActive(false);
 					sequence_number = 5;
+					playervoice.Play();
 				}
 			}
 		}
